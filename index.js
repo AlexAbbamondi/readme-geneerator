@@ -29,39 +29,39 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Enter installation instructions:" //npm install
+        message: "Enter dependency installation instructions -i.e. npm i:" //npm install
     },
     {
         type: "input",
         name: "usage",
-        message: "Enter usage information:"
+        message: "Enter usage instructions:"
     },
     {
         type: "input",
         name: "contribution",
-        message: "Enter contribution guidelines:"
+        message: "Enter how to contribute to the project:"
     },
     {
         type: "input",
         name: "test",
-        message: "Enter test instuctions:" //node index.js
+        message: "Enter test instuctions -i.e. node index.js:" //node index.js
     },
     {
         type: "input",
         name: "license",
-        choices: "Enter a license:"
+        message: "Enter a license:"
     }
 ];
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data, err => {
-        err ? console.log(err) : console.log("Success!");
+     fs.writeFileSync(path.join(process.cwd(), fileName), data, err => {
+        err ? console.log(err) : console.log("Created Successfully!");
     })
 }
 
 // TODO: Create a function to initialize app
-function init() {
+const init = () => {
     inquirer
         .prompt(questions)
         .then((answers) => {
