@@ -3,11 +3,11 @@
 const renderLicenseBadge = (license) => {
   switch (license) {
     case "MIT":
-      return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
     case "Apache":
-      return "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
     case "GPL":
-      return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
     case "No License":
       return "";
     default:
@@ -24,7 +24,7 @@ const renderLicenseLink = (license) => {
     case "Apache":
       return "https://opensource.org/licenses/Apache-2.0";
     case "GPL":
-      return "https://www.gnu.org/licenses/gpl-3.0"
+      return "https://www.gnu.org/licenses/gpl-3.0";
     case "No License":
       return "";
     default:
