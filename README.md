@@ -27,7 +27,7 @@
 
   # Usage
   To use this app you must: 
-  use the terminal within VSCode
+  Use the terminal within VSCode
 
   <br/>
 
@@ -43,12 +43,7 @@
   node index.js
   ```
 
-  <br/>
-
-  # License
- 
-
-  <br/>
+  
 
   # Questions
    Questions or issues? Contact AlexAbbamondi at alex.abbamondi@gmail.com.

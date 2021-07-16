@@ -35,8 +35,8 @@ const renderLicenseLink = (license) => {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => {
-  if (license != "" || license != "No License") {
-    return `# License\n${renderLicenseBadge(license)} ${renderLicenseLink(license)}`;
+  if (license != "No License") {
+    return `<br># License\n${renderLicenseBadge(license)} ${renderLicenseLink(license)}<br>`;
   } else {
     return "";
   }
@@ -89,11 +89,7 @@ const generateMarkdown = (data) => {
   ${data.test}
   \`\`\`
 
-  <br/>
-
   ${renderLicenseSection(data.license)}
-
-  <br/>
 
   # Questions
    Questions or issues? Contact ${data.github} at ${data.email}.
