@@ -47,9 +47,9 @@ const questions = [
         message: "Enter test instuctions -i.e. node index.js:" //node index.js
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "Enter a license:"
+        choices: ["MIT", "Apache", "GPL", "No License"]
     }
 ];
 
