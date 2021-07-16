@@ -3,11 +3,11 @@
 const renderLicenseBadge = (license) => {
   switch (license) {
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      return "![License: MIT](https://img.shields.io/apm/l/vim-mode)";
     case "Apache":
-      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+      return "![License](https://img.shields.io/aur/license/android-studio)";
     case "GPL":
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+      return "![License: GPL v3](https://img.shields.io/eclipse-marketplace/l/notepad4e)";
     case "No License":
       return "";
     default:
@@ -35,13 +35,10 @@ const renderLicenseLink = (license) => {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => {
-  if(license != "") {
-    return `# License
-    Licensed under: ${renderLicenseBadge(license)} \n
-    Link: ${renderLicenseLink(license)}
-    `
+  if (license != "") {
+    return `# License\n${renderLicenseBadge(license)} ${renderLicenseLink(license)}`;
   } else {
-    return ""
+    return "";
   }
 };
 
@@ -75,12 +72,14 @@ const generateMarkdown = (data) => {
   <br/>
 
   # Usage
-  To use this app you must: ${data.usage}
+  To use this app you must: 
+  ${data.usage}
 
   <br/>
 
   # Contributing
-  ​In order to contribute you must: ${data.contribution}
+  ​In order to contribute you must: 
+  ${data.contribution}
 
   <br/>
 

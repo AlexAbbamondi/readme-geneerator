@@ -1,9 +1,9 @@
-# readme-generator
+# Readme Generator
 
   <br/>
   
   # Description
-  this is a test
+  This is a readme generator created with node where a user can input information in the terminal to generate a readme file for any project
 
   <br/>
 
@@ -20,18 +20,20 @@
   # Installation
   The following dependencies must be installed: 
   ```sh
-  npm i
+  npm install
   ```
 
   <br/>
 
   # Usage
-  To use this app you must: use in the terminal or git bash
+  To use this app you must: 
+  Use the terminal or Git Bash
 
   <br/>
 
   # Contributing
-  ​In order to contribute you must: anyone can contribute
+  ​In order to contribute you must: 
+  Anyone can Contribute
 
   <br/>
 
@@ -44,12 +46,9 @@
   <br/>
 
   # License
-    Licensed under: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] 
-
-    Link: https://opensource.org/licenses/MIT
-    
+ 
 
   <br/>
 
   # Questions
-   Questions or issues? Contact Alex at alex.abbamondi@gmail.com.
+   Questions or issues? Contact AlexAbbamondi at alex.abbamondi@gmail.com.
