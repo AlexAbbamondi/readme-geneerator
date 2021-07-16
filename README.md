@@ -3,7 +3,7 @@
   <br/>
   
   # Description
-  This is a readme generator created with node where a user can input information in the terminal to generate a readme file for any project
+  This is a readme generator created with node where a user can input information in the terminal to generate a readme file for any project.
 
   <br/>
 
@@ -27,13 +27,13 @@
 
   # Usage
   To use this app you must: 
-  Use the terminal or Git Bash
+  use the terminal within VSCode
 
   <br/>
 
   # Contributing
   ​In order to contribute you must: 
-  Anyone can Contribute
+  Anyone can contribute
 
   <br/>
 
